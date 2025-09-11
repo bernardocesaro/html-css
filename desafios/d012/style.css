@@ -28,10 +28,15 @@
 .link-externo {
     font-weight: bold;
     text-decoration: none;
+    color: white;
 }
 
 .link-externo:hover {
     text-decoration: underline;
+}
+
+.link-externo:active {
+    color: white;
 }
 
 .link-externo:visited {

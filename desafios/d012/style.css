@@ -67,7 +67,7 @@ section.texto {
 
 section.texto > p {
     padding-bottom: 100px;
-    font: normal normal 4em var(--fonte3);
+    font: normal normal 3em var(--fonte3);
     text-align: justify;
 }
 
@@ -85,7 +85,7 @@ section.texto-imagem > p {
     padding: 4px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font: normal normal 4em var(--fonte3);
+    font: normal normal 3em var(--fonte3);
     text-align: justify;
     text-shadow: 1px 1px 10px black;
 }

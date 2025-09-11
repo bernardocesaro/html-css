@@ -18,6 +18,7 @@
     font-size: 1em;
 }
 
+
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: "Passion One";
@@ -37,28 +38,6 @@
     color: white;
 }
 
-section.texto {
-    padding-top: 50px;
-    padding-left: 50px;
-    font: normal normal 2em var(--fonte3);
-    text-align: justify;
-}
-
-section.texto > p {
-    padding-bottom: 50px;
-}
-
-section.texto-imagem {
-    padding-top: 50px;
-    padding-left: 50px;
-    font: normal normal 2em var(--fonte3);
-    text-align: justify;
-}
-
-section.texto-imagem > p {
-    padding-bottom: 50px;
-}
-
 header {
     text-align: center;
     background-color: black;
@@ -66,7 +45,7 @@ header {
 
 header > h1 {
     padding-top: 50px;
-    font: normal small-caps bold 7em var( --fonte2), var(--fonte1);
+    font: normal small-caps bold 10em var( --fonte2), var(--fonte1);
     color: white;
 }
 
@@ -76,6 +55,50 @@ header > p {
     color: white;
 }
 
+section.texto {
+    padding-top: 100px;
+    padding-left: 50px; 
+}
+
+section.texto > p {
+    padding-bottom: 100px;
+    font: normal normal 4em var(--fonte3);
+    text-align: justify;
+}
+
+section.texto-imagem {
+    box-shadow: inset 1px 2px 10px rgba(0, 0, 0, 0.5);
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+section.texto-imagem > p {
+    display:inline-block;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font: normal normal 4em var(--fonte3);
+    text-align: justify;
+    text-shadow: 1px 1px 10px black;
+}
+
+section.texto-imagem#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section.texto-imagem#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 footer {
     text-align: center;
     background-color: black;
@@ -83,6 +106,6 @@ footer {
 
 footer > p {
     padding: 10px;
-    font: normal normal 1.2em var(--fonte1);
+    font: normal normal 1em var(--fonte1);
     color: white;
 }

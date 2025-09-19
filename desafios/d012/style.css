@@ -5,11 +5,11 @@
 
 @font-face {
     font-family: "Passion One";
-    src: url();
+    src: url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 }
 @font-face {
     font-family: 'Sriracha';
-    src: url();
+    src: url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 }
 
 * {
@@ -18,6 +18,11 @@
     font-size: 1em;
 }
 
+html, body {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
@@ -50,7 +55,7 @@ header {
 
 header > h1 {
     padding-top: 50px;
-    font: normal small-caps bold 10em var( --fonte2), var(--fonte1);
+    font: normal small-caps bold 10vw var( --fonte2), var(--fonte1);
     color: white;
 }
 
@@ -65,10 +70,14 @@ section.texto {
     padding-left: 50px; 
 }
 
+section > p {
+    font: normal normal 4vw var(--fonte3);
+    text-align: justify;
+}
+
 section.texto > p {
     padding-bottom: 100px;
-    font: normal normal 3em var(--fonte3);
-    text-align: justify;
+    line-height: 2em;
 }
 
 section.texto-imagem {
@@ -84,9 +93,7 @@ section.texto-imagem > p {
     display:inline-block;
     padding: 4px;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font: normal normal 3em var(--fonte3);
-    text-align: justify;
+    color: white; 
     text-shadow: 1px 1px 10px black;
 }
 
@@ -95,6 +102,7 @@ section.texto-imagem#img01 {
     background-position: right center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 section.texto-imagem#img02 {
@@ -102,6 +110,7 @@ section.texto-imagem#img02 {
     background-position: right center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 footer {

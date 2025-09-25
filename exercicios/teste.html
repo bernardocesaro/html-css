@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <input type="text" id="urlPergunta" placeholder="Digite a URL das perguntas aqui">
+    <button id="changeButtonPergunta">Mudar Conteúdo - Pergunta</button>
+    <input type="text" id="urlResposta" placeholder="Digite a URL das respostas aqui">
+    <button id="changeButtonResposta">Mudar Conteúdo - Resposta</button>
+    <br>
+    <iframe
+        id="myIframePergunta"
+        src="https://www.matematica.pt/docs/kangaroo/enunciados/2012/miniEscolar1.pdf" 
+        frameborder="0"
+        width="45%"
+        height="880px">
+    </iframe>
+    <iframe
+        id="myIframeResposta"
+        src="https://www.matematica.pt/docs/kangaroo/enunciados/2012/ChaveMiniEscolar1.pdf" 
+        frameborder="0"
+        width="45%"
+        height="880px">
+    </iframe>
+    <script>
+        const urlPergunta = document.getElementById('urlPergunta');
+        const urlResposta = document.getElementById('urlResposta');
+        const changeButtonPergunta = document.getElementById('changeButtonPergunta');
+        const changeButtonResposta = document.getElementById('changeButtonPergunta');
+        const myIframePergunta = document.getElementById('myIframePergunta');
+        const myIframeResposta = document.getElementById('myIframeResposta');
+
+        changeButtonPergunta.addEventListener('click', function() 
+        {
+            const newUrlPergunta = urlPergunta.value;
+
+            if (newUrlPergunta) {
+                myIframePergunta.src = newUrlPergunta;
+            } else {
+                alert('Por favor, insira uma URL válida.');
+            }
+        });
+
+        changeButtonResposta.addEventListener('click', function() 
+        {
+            const newUrlResposta = urlResposta.value;
+
+            if (newUrlResposta) {
+                myIframeResposta.src = newUrlResposta;
+            } else {
+                alert('Por favor, insira uma URL válida.');
+            }
+        });
+    </script>
+</body>
+</html>
